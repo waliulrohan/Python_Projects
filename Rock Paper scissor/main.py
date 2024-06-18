@@ -1,5 +1,5 @@
 import random
-
+import time
 '''
 0 for rock
 1 for paper
@@ -7,8 +7,8 @@ import random
 '''
 my_list = ['rock' , 'paper' , 'scissors']
 
-print(' \n 0 for rock, 1 for paper, 2 for scissors')
 while True:
+    print(' \n 0 for rock, 1 for paper, 2 for scissors')
     user_input = input("\n \n Choose (or type 'exit' to stop) :")
 
     if user_input == "exit":
@@ -28,5 +28,6 @@ while True:
             print("YOU WON")
         else:
             print("YOU LOST")
+        time.sleep(2)    
     else:
         print("Invalid input. Please enter 0 for rock, 1 for paper, or 2 for scissors.")
